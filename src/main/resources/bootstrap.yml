@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: twitter-client-eureka
+  cloud:
+    config:
+      uri: http://localhost:8055
