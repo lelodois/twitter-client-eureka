@@ -1,6 +1,8 @@
 # twitter-eureka
 
 ### Build docker
-- java -jar target/twitter-client-eureka-0.0.1-SNAPSHOT.jar –server.port=8051
-- docker build -t twcli-eureka .
-- docker run -d -p 8051:8051 {tag}
+
+- mvn install
+- docker build -t twcli-eureka-docker .
+- docker run --net mynet123 --ip 172.18.0.21 -d -p 8091:8091 {tag}
+
